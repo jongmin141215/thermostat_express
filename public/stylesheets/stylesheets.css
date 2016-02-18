@@ -1,0 +1,107 @@
+body {
+  font-family: monospace;
+  background-color: #e0ffff;
+}
+h1 {
+  margin-top: 100px;
+  text-align: center;
+}
+#thermostat {
+  background-color: white;
+  margin: 80px auto;
+  width: 400px;
+  height: 300px;
+  border: 2px solid black;
+  border-radius: 15%;
+}
+#screen {
+  position: relative;
+  top: 20px;
+  left: 20px;
+  width: 352px;
+  height: 255px;
+  border: 2px solid black;
+  border-radius: 15%;
+  background-color: #d3d3d3;
+}
+#energy {
+  text-align: center;
+  position: relative;
+  left: 280px;
+  width: 65px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15%;
+}
+.green {
+  background-color: green;
+}
+.yellow {
+  background-color: yellow;
+}
+.red {
+  background-color: red;
+}
+#increase {
+  position: relative;
+  border: 1px solid black;
+  left: 280px;
+  width: 65px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 15%;
+}
+#decrease {
+  position: relative;
+  left: 280px;
+  width: 65px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15%;
+  display: inline-block;
+}
+#temp {
+  position: relative;
+  top: 20px;
+  left: 145px;
+  text-align: center;
+  font-size: 50px;
+  display: inline-block;
+}
+#reset {
+  position: relative;
+  left: 280px;
+  width: 65px;
+  height: 30px;
+  border: 1px solid black;
+  border-radius: 15%;
+  display: inline-block;
+}
+#powerSaving {
+  text-align: center;
+  float: right;
+  position: relative;
+  right: 5px;
+}
+#currentTemp {
+  position: relative;
+  left: 10px;
+}
+#city {
+  position: relative;
+  left: 10px;
+  width: 80px;
+}
+#searchButton {
+  position: relative;
+  text-align: center;
+  left: 7px;
+  width: 45px;
+  height: 18px;
+  border: 1px solid black;
+  border-radius: 15%;
+}
+#anotherTemp {
+  position: relative;
+  left: 10px;
+}

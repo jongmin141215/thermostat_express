@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Thermostat</title>
+    <link rel="stylesheet" type="text/css" href="./public/stylesheets/stylesheets.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="src/Thermostat.js"></script>
+    <script src="src/Weather.js"></script>
+    <script src="src/application.js"></script>
+  </head>
+  <body>
+    <h1>THERMOSTAT</h1>
+    <div id="thermostat">
+      <div id="screen">
+        <div id="temp"></div>
+        <div>
+          <button id="increase">&Delta;</button><br>
+          <button id="decrease">&nabla;</button>
+        </div>
+        <button id="reset">RESET</button>
+        <div id="energy">ENERGY</div>
+        <form id="powerSaving">
+          <input type="checkbox" checked><br>POWER SAVING
+        </form>
+        <div id="currentTemp"></div>
+        <input id="city" type="text" name="city" placeholder="e.g.) Paris">
+        <input id="searchButton" type="submit" value="search">
+        <div id="anotherTemp"></div>
+      </div>
+  </div>
+  </body>
+</html>
