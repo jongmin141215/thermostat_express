@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/jongmin141215/thermostat_express",
   "dependencies": {
+    "dotenv": "^2.0.0",
     "express": "^4.13.4"
   }
 }

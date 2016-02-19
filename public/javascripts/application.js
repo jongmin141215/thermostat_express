@@ -48,9 +48,10 @@ $(function() {
   })
 
   var weatherUrl = 'http://api.openweathermap.org/data/2.5/weather?q='
-  var cityName = 'London';
-
-  $.ajax(weatherUrl + cityName, {
+  var cityName = 'San Diego';
+  // Since request is being made on the client side, I needed to provide an API key.
+  // For ease of demonstration, I hardcoded my API key.
+  $.ajax(weatherUrl + cityName + '&APPID=' + '154ef66164ffbaf9a55a725f3ef99139', {
     success: function(data) {
       $('#currentTemp').text(cityName + ': ' + (Math.round(data.main.temp - 273.15)) + "ºC/ " + data.weather[0].description);
     },
@@ -64,7 +65,7 @@ $(function() {
     $('#anotherCity').text($('#city').val());
 
     var cityName = $('#city').val();
-    $.ajax(weatherUrl + cityName, {
+    $.ajax(weatherUrl + cityName + '&APPID=' + '154ef66164ffbaf9a55a725f3ef99139', {
       success: function(data) {
         $('#anotherTemp').text(cityName + ': ' + (Math.round(data.main.temp - 273.15)) + "ºC/ " + data.weather[0].description);
       },
